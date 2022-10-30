@@ -3,7 +3,7 @@ import React from "react";
 const Wedding = ({ image, service }) => {
   return (
     <div
-      className="relative w-full h-64 md:h-96  lg:h-screen bg-cover bg-center bg-fixed"
+      className="relative w-full h-64 md:h-96  lg:h-screen bg-cover bg-center lg:bg-fixed"
       style={{
         backgroundImage: `url(${image.src})`,
         backgroundRepeat: "no-repeat",

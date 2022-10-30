@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <div
-      className="hero bg-fixed"
+      className="hero lg:bg-fixed"
       style={{
         backgroundImage: `url("https://static.wixstatic.com/media/157414_e463c9d44c40421894464f2d838b933d~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1899,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/157414_e463c9d44c40421894464f2d838b933d~mv2_d_5184_3456_s_4_2.jpg")`,
         height: "450px",
