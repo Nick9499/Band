@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className=" body-font">
       <div className="container mx-auto  px-10 pt-10 pb-2 text-black">
         <div className="text-center">
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-between sm:justify-start">
+          {/* <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-between sm:justify-start">
             <a
               className="text-gray-800 hover:opacity-70"
               href="#"
@@ -19,10 +19,10 @@ const Footer = () => {
               target="_blank">
               <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
-          </span>
+          </span> */}
         </div>
         <p className="text-gray-400 text-sm text-center mt-5">
-          © 2022 Eric Perdomo Jr. Music
+          © 2022 Mr. Perdomo Entertainment
         </p>
       </div>
     </footer>

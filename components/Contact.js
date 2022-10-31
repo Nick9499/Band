@@ -26,11 +26,11 @@ const Contact = () => {
               </span>
             </a>
           </div>
-          <div className="p-5 text-5xl hover:opacity-60">
+          {/* <div className="p-5 text-5xl hover:opacity-60">
             <span className="text-white ">
               <i className="fa-brands fa-instagram"></i>
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
