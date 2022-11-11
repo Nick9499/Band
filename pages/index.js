@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
-import Banner from "../components/Banner";
+import Banner from "../components/Home/Banner";
 import ServiceComp from "../components/services";
 import services from "../constants/services";
-import Contact from "../components/Contact";
+import Contact from "../components/Home/Contact";
 import Script from "next/script";
 import Clients from "../components/Clients";
 import Footer from "../components/Footer";
@@ -23,7 +23,7 @@ const Home = () => {
       <Header />
 
       <Banner />
-      {services.map((s) => (
+      {services.map((s, index) => (
         <ServiceComp image={s.img} service={s.service} key={Math.random()} />
       ))}
       <Contact />

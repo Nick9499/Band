@@ -1,6 +1,16 @@
 import React from "react";
+import { useRouter } from "next/router";
+
+const HOME = "/";
+const WEDDING = "/wedding";
+const SOCIAL_EVENTS = "/social-events";
 
 const Header = () => {
+  const router = useRouter();
+
+  const handleClick = (url) => {
+    router.push(url);
+  };
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -24,13 +34,13 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li>
-              <a>Home</a>
+              <a onClick={() => handleClick(HOME)}>Home</a>
             </li>
             <li>
-              <a>Weddings</a>
+              <a onClick={() => handleClick(WEDDING)}>Weddings</a>
             </li>
             <li>
-              <a>Social Events</a>
+              <a onClick={() => handleClick(SOCIAL_EVENTS)}>Social Events</a>
             </li>
           </ul>
         </div>
@@ -41,13 +51,13 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a>Home</a>
+            <a onClick={() => handleClick(HOME)}>Home</a>
           </li>
           <li>
-            <a>Weddings</a>
+            <a onClick={() => handleClick(WEDDING)}>Weddings</a>
           </li>
           <li>
-            <a>Social Events</a>
+            <a onClick={() => handleClick(SOCIAL_EVENTS)}>Social Events</a>
           </li>
         </ul>
       </div>
